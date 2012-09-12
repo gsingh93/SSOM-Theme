@@ -29,6 +29,22 @@ body {
 	background: #6DA7E7;
 }
 
+#branding {
+	float: left;
+	margin-left: 3em;
+}
+
+#logo {
+	position: relative;
+	height: 130px;
+	right: -10em;
+	top: -.5em
+}
+
+#branding h1, h2 {
+font-family: 'Merienda One', cursive;
+}
+
 a:visited {
 	color: #101010;
 }
@@ -50,6 +66,6 @@ h2 {
 	text-align: center;
 	box-sizing: border-box;
 	background: #101010;
-	height: 15em;
+	height: 14em;
 	color: white;
 }

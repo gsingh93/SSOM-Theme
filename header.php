@@ -7,6 +7,7 @@
 	
 		<?php wp_head(); ?>
 		
+		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
 	</head>
 	<body>
@@ -14,10 +15,12 @@
 			<div id="header">
 				
 				<div id="branding">
-					<a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><h1><?php bloginfo( 'name' ) ?></h1></a>
+					<a href="<?php bloginfo( 'url' ) ?>/" title="Sikh Society of Michigan" rel="home"><h1>Sikh Society of Michigan</h1></a>
 					
-					<h2><?php get_description(); ?></h2>
+					<h2>Sterling Heights Gurdwara</h2>
 				</div> <!-- #branding -->
+				
+				<img id="logo" src="<?php bloginfo('template_directory'); ?>/images/khanda.png">
 				
 			</div> <!-- #header -->
 			
