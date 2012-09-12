@@ -1,0 +1,55 @@
+/*
+Theme Name: SSOM Theme
+*/
+
+@CHARSET "UTF-8";
+@import url('styles/reset.css');
+@import url('styles/rebuild.css');
+@import url('styles/layout.css');
+@import url('styles/menu.css');
+
+
+html {
+	height: 100%;
+	margin-top: 0 !important;
+}
+
+body {
+	height: 100%;
+}
+
+#container {
+	padding: 20px;
+}
+
+#header {
+	position: relative;
+	padding: 10px;
+	height: 10em;
+	background: #6DA7E7;
+}
+
+a:visited {
+	color: #101010;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+#header a, a:hover {
+	text-decoration: none;
+}
+
+#footer {
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	background: #101010;
+	height: 15em;
+	color: white;
+}
