@@ -1,4 +1,6 @@
 			<div id="footer">
+				<?php wp_footer(); ?>
+				
 				The Sikh Society Of Michigan Inc<br>
 A Non-Profit Organization<br>
 33340 Dequindre, Sterling Heights, MI - 48310 (<a href="http://goo.gl/maps/G4B4M" style="color:#0FC;">View Map</a>)<br>

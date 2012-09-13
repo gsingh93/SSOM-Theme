@@ -12,10 +12,8 @@ Version 1.0
 @import url('styles/layout.css');
 @import url('styles/menu.css');
 
-
 html {
 	height: 100%;
-	margin-top: 0 !important;
 }
 
 body {
@@ -28,8 +26,9 @@ body {
 
 #content {
 	float: right;
-	margin-right: 5em;
-	width: 50em;
+	margin-right: 13em;
+	width: 55em;
+	min-height: 23em;
 }
 
 #header {
