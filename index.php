@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <div id="container">
+	<?php get_sidebar(); ?>
 	<div id="content">
 		<?php
 			$page_id = get_the_ID();

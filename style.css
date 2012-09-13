@@ -1,5 +1,9 @@
 /*
 Theme Name: SSOM Theme
+Description: A theme for the Sikh Society of Michigan website
+Author: Gulshan Singh
+Author URI: http://www.gulshansingh.com
+Version 1.0
 */
 
 @CHARSET "UTF-8";
@@ -22,11 +26,21 @@ body {
 	padding: 20px;
 }
 
+#content {
+	float: right;
+	margin-right: 5em;
+	width: 50em;
+}
+
 #header {
 	position: relative;
 	padding: 10px;
 	height: 10em;
 	background: #6DA7E7;
+}
+
+#sidebar {
+	float: right;
 }
 
 #branding {
@@ -41,7 +55,7 @@ body {
 	top: -.5em
 }
 
-#branding h1, h2 {
+#branding h1, #branding h2 {
 font-family: 'Merienda One', cursive;
 }
 
