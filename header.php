@@ -25,7 +25,4 @@
 				
 			</div> <!-- #header -->
 			
-			<div id="cssmenu">
-				<?php wp_page_menu( 'sort_column=menu_order' ); ?>
-			</div> <!-- #cssmenu -->
-			
+                        <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_id' => 'cssmenu')); ?>			
