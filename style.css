@@ -30,6 +30,10 @@ body {
 	padding: 20px;
 }
 
+#container a {
+    font-size: 16px;
+}
+
 #content {
 	float: right;
 	margin-right: 7em;
