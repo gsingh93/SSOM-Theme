@@ -8,10 +8,10 @@ function register_my_menus() {
 
 if (function_exists('register_sidebar'))
 	register_sidebar(array(
-			'before_widget' => '',
-			'after_widget' => '',
-			'before_title' => '<h2>',
-			'after_title' => '</h2>',
+			'before_widget' => '<div class="sidebar-widget">',
+			'after_widget' => '</div>',
+			'before_title' => '<div class="sidebar-widget-title">',
+			'after_title' => '</div><hr>',
 	));
 
 function get_title() {

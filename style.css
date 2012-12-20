@@ -27,7 +27,7 @@ body {
 
 #content {
 	float: right;
-	margin-right: 13em;
+	margin-right: 7em;
 	width: 55em;
 	min-height: 23em;
 }
@@ -41,6 +41,48 @@ body {
 
 #sidebar {
 	float: right;
+	background: #f4f4f4;
+	height: 100%;
+	margin-right: 30px;
+	margin-top: 15px;
+
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+border-radius: 11px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 7px #000000;
+-webkit-box-shadow: 0px 0px 7px #000000;
+box-shadow: 0px 0px 7px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#dcedeb');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#dcedeb')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #dcedeb);
+background-image: -ms-linear-gradient(top, #ffffff, #dcedeb);
+background-image: -o-linear-gradient(top, #ffffff, #dcedeb);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#dcedeb));
+background-image: -webkit-linear-gradient(top, #ffffff, #dcedeb);
+background-image: linear-gradient(top, #ffffff, #dcedeb);
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+
+.sidebar-widget {
+}
+
+.sidebar-widget-title {
+    text-align: center;
+    font-size: 24px;
+    padding: 0px 30px;
+    padding-top: 5px;
 }
 
 #branding {
@@ -56,7 +98,7 @@ body {
 }
 
 #branding h1, #branding h2 {
-font-family: 'Merienda One', cursive;
+    font-family: 'Merienda One', cursive;
 }
 
 .title {
