@@ -158,6 +158,30 @@ table {
     font-size: 16px;
 }
 
+table.rounded-corners thead tr td:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+table.rounded-corners thead tr td:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+table.rounded-corners tbody tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+table.rounded-corners tbody tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 6px 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
 table.blue-table {
     margin-top: 20px;
     margin-bottom: 20px;
