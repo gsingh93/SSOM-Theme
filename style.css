@@ -35,8 +35,7 @@ body {
 }
 
 #content {
-	float: right;
-	margin-right: 7em;
+	margin: auto;
 	width: 55em;
 	min-height: 23em;
 }
