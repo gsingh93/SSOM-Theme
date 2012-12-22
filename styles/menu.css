@@ -7,6 +7,7 @@
   position: relative;
 }
 #cssmenu {
+  text-align: center;
   height: 49px;
   background: #141414;
   background: -moz-linear-gradient(top, #32323a 0%, #141414 100%);
@@ -45,10 +46,9 @@
   list-style: none;
 }
 #cssmenu > ul {
-  float: left;
 }
 #cssmenu > ul > li {
-  float: left;
+    display: inline-block;
 }
 #cssmenu > ul > li:hover:after {
   content: '';
