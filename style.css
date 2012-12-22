@@ -109,8 +109,7 @@ background-clip: padding-box;
     font-family: 'Merienda One', cursive;
 }
 
-.title {
-    margin-left: -50px;
+.post_title {
     margin-bottom: 10px;
     font-size: 36px;
     line-height: 95%;
@@ -288,6 +287,8 @@ background: -ms-linear-gradient(top,  #bdcbfc 0%,#d0dafd 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #bdcbfc 0%,#d0dafd 100%); /* W3C */
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdcbfc', endColorstr='#d0dafd',GradientType=0 ); /* IE6-8 */
+}
 
-
+.post_content {
+    margin-left: 50px;
 }
