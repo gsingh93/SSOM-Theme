@@ -40,7 +40,9 @@ body {
     -webkit-border-radius: 11px;
     border-radius: 11px;
     margin: auto;
-    width: 900px;
+    width: 80%;
+    max-width: 1000px;
+    min-width:800px;
     min-height: 23em;
     padding: 10px;
     background: white;
