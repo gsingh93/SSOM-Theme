@@ -47,9 +47,9 @@ body {
     min-height: 23em;
     padding: 10px;
     background: white;
-    -moz-box-shadow: 6px 0 4px -4px #C0C0C0, -6px 0 4px -4px #C0C0C0; 
-    -webkit-box-shadow: 6px 0 4px -4px #C0C0C0, -6px 0 4px -4px #C0C0C0;
-    box-shadow: 6px 0 4px -4px #C0C0C0, -6px 0 4px -4px #C0C0C0; 
+    -moz-box-shadow: 0px 2px 6px 3px #C0C0C0;
+    -webkit-box-shadow: 0px 2px 6px 3px #C0C0C0;
+    box-shadow: 0px 2px 6px 3px #C0C0C0;
 }
 
 #header {
