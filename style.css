@@ -26,10 +26,16 @@ body {
     text-align: center;
 }
 
-#container {
-    height: 100%;
-    padding: 20px;
+#wrapper {
+    min-height: 100%;
+    height: auto important;
+   /* height: 100%;*/
+    margin: 0 auto -164px;
     background: #f4f4f4;
+}
+
+#container {
+    padding: 20px;
 }
 
 #container a {
@@ -44,7 +50,6 @@ body {
     width: 80%;
     max-width: 1000px;
     min-width:800px;
-    min-height: 23em;
     padding: 10px;
     background: white;
     -moz-box-shadow: 0px 2px 6px 3px #C0C0C0;
@@ -161,12 +166,15 @@ ul li {
     font-size: 16px;
 }
 
+#footer, #push {
+    height: 164px;
+}
+
 #footer {
     padding: 10px;
     text-align: center;
     box-sizing: border-box;
     background: #101010;
-    height: 14em;
     color: white;
 }
 

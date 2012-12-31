@@ -1,3 +1,4 @@
+                        </div> <!-- #wrapper -->
 			<div id="footer">
 				<?php wp_footer(); ?>
 				
@@ -11,7 +12,5 @@ For Urgent Matters Contact Surinderjit Singh: 586-873-3444<br>
 Please send website comments to the webmaster (Gulshan Singh) at: <a href="mailto:webmaster@michigangurudwara.com" style="color:#0FC;">webmaster@michigangurudwara.com</a><br>
 This web site is best viewed using Firefox 3.5 and above.
 			</div> <!-- #footer -->
-			
-		</div> <!-- #wrapper -->
 	</body>
 </html>
