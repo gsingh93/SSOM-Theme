@@ -10,7 +10,7 @@
 		    ?>
                     <div class="post_title"><?php echo $page_data->post_title; ?></div>
 		    <div class="post_content">
-		        <?php echo $page_data->post_content; ?>
+			  <?php echo apply_filters('the_content', $page_data->post_content); ?>
 		    </div>
 		</div> <!-- .post -->
 		
