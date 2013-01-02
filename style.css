@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    color: #444;
     min-width:900px;
     height: 100%;
 }
@@ -349,7 +350,8 @@ table.blue-table tbody tr:hover {
 }
 
 .depth-1 {
-    background: #f2f2f2;
+    border: solid 1px #cccccc;
+    background: #f8f7f9;
     margin: 10px;
     margin-bottom: 20px;
     padding: 10px;
@@ -358,21 +360,46 @@ table.blue-table tbody tr:hover {
 }
 
 .depth-2 {
-    background: #fafafa;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-left: -10px; /* Counter the depth-1 padding */
+    border: solid 1px #cccccc;
+    margin: 15px;
     padding: 10px;
+    padding-bottom: 0px;
     padding-left: 40px;
-    width: 470px;
+    width: 420px;
 }
 
 #comment-form {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     width: 700px;
+}
+
+.comment p {
+    margin-bottom: 10px !important;
 }
 
 .comment-form-comment *{
     vertical-align: middle;
+}
+
+cite.fn, .says {
+    font-size: 16px;
+}
+
+.comment-meta a, .comment-meta a:visited {
+    color: #666 !important;
+    font-size: 12px !important;
+    text-decoration: none;
+}
+
+.comment-meta {
+    margin-bottom: 10px !important;
+}
+
+.comment-meta a:hover {
+    color: red !important;
+}
+
+.reply {
+    margin-bottom: 5px;
 }
