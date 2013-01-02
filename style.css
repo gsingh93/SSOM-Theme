@@ -347,3 +347,32 @@ table.blue-table tbody tr:hover {
 #nojavascript span {
     color: red;
 }
+
+.depth-1 {
+    background: #f2f2f2;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 500px;
+}
+
+.depth-2 {
+    background: #fafafa;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: -10px; /* Counter the depth-1 padding */
+    padding: 10px;
+    padding-left: 40px;
+    width: 470px;
+}
+
+#comment-form {
+    margin: auto;
+    margin-top: 50px;
+    width: 700px;
+}
+
+.comment-form-comment *{
+    vertical-align: middle;
+}
