@@ -122,6 +122,7 @@ body {
 }
 
 #branding h1, #branding h2 {
+    color: #101010;
     font-family: 'Merienda One', cursive;
 }
 
