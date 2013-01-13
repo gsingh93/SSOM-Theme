@@ -26,7 +26,8 @@
 	<body>
 		<div id="wrapper">
 			<div id="header">
-				
+<a href="http://twitter.com/SikhSocietyOfMi"><img style="float:right" src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.png"></a>
+			  <a href="http://facebook.com/people/Sikh-Michigan/100000505093114"><img style="float:right;margin-right:4px" src="<?php bloginfo('template_directory'); ?>/images/facebook-icon.png"></a>
 				<div id="branding">
 					<a href="<?php bloginfo( 'url' ) ?>/" title="Sikh Society of Michigan" rel="home"><h1>Sikh Society of Michigan</h1></a>
 					
