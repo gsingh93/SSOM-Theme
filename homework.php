@@ -19,7 +19,7 @@ Template Name: Homework List
 		    ?>
 		    <div class="post_content">
 		      <?php echo $post_data->post_content; ?>
-		      <table class="rounded-corners blue-table" id="langar">
+		      <table class="rounded-corners blue-table two-column">
 			<thead>
 			  <tr>
 			    <td>Date</td>
@@ -35,7 +35,7 @@ Template Name: Homework List
 			
 			echo "<tr>";
 			  echo "<td>" . $date . "</td>";
-			  echo "<td><a href='" . get_permalink($post->ID) . "'>Visit Assignment</a></td>";
+			  echo "<td><a href='" . get_permalink($post->ID) . "'>View Assignment</a></td>";
 			  echo "</tr>";
 			}
 			?>
