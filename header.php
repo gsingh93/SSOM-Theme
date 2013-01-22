@@ -16,7 +16,7 @@
 		</script>
 	
 		<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-			
+		<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />			
 		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
 
