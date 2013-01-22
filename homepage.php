@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 
 <div id="container">
-	<div id="content">
+	<div id="content" style="max-width:1000px">
                 <?php get_sidebar(); ?>
                 <div class="post">
 		    <?php
