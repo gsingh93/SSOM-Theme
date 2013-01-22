@@ -22,6 +22,12 @@ body {
     height: 100%;
 }
 
+#title {
+    font-size: 38px;
+    color: #333;
+    text-align: center;
+}
+
 .center-div {
     width: 100%;
     text-align: center;
