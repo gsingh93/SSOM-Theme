@@ -16,6 +16,13 @@ Template Name: Homework List
 		        $id = $wp_query->post->ID;
                         $grade = get_post_meta($id, 'grade', true);
 		        $posts = get_posts('post_type=homework&meta_key=grade&meta_value=' . $grade); 
+			$posts_dates = array();
+			foreach ($posts as $post) {
+			    $date = get_post_meta($post->ID, 'assign_date', true);
+			    $posts_dates[$date] = $post;
+			    
+			}
+			krsort($posts_dates);
 		    ?>
 		    <div class="post_content">
 		      <?php echo $post_data->post_content; ?>
@@ -27,9 +34,8 @@ Template Name: Homework List
 			  </tr>
 			</thead>
 			<?php
-			   foreach ($posts as $post) {
+			   foreach ($posts_dates as $date=>$post) {
 			   // Date format is yyyyddmm
-			   $date = get_post_meta($post->ID, 'assign_date', true);
 			$date = substr($date, 4);
 			$date = substr($date, 0, 2) . '/' . substr($date, 2);
 			
