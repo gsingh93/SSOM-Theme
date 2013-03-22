@@ -13,8 +13,10 @@
 		        $page_id = get_the_ID();
 			$page_data = get_page($page_id);
 		    ?>
-		    <h1 id="title">Welcome to the Sikh Society of Michigan Website</h2>
-		    <div class="post_content">
+		    <img src="http://www.michigangurudwara.com/wordpress/wp-content/themes/SSOM-Theme/images/khanda-small.png">
+		    <img style="float:right" src="http://www.michigangurudwara.com/wordpress/wp-content/themes/SSOM-Theme/images/khanda-small.png">	
+	    	    <h1 style="top:-50px; position:relative" id="title">Welcome to the Sikh Society of Michigan Website</h2>
+		    <div style="top:-50px; position:relative" class="post_content">
 			  <?php echo apply_filters('the_content', $page_data->post_content); ?>
 		    </div>
 		</div> <!-- .post -->
