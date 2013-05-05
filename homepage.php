@@ -18,6 +18,22 @@
 	    	    <h1 style="top:-50px; position:relative" id="title">Welcome to the Sikh Society of Michigan Website</h2>
 		    <div style="top:-50px; position:relative" class="post_content">
 			  <?php echo apply_filters('the_content', $page_data->post_content); ?>
+			  <h2>Announcements</h2>
+			  <?php
+			        $posts = get_posts('post_type=announcement');
+				$date = intval(date("Ymd"));
+				$noAnnounce = true;
+				foreach ($posts as $post) {
+				    $expDate = get_post_meta($post->ID, 'expiration_date', true);
+				    if ($date < $expDate) {
+				       echo "<a href='" . get_permalink($post->ID) . "'>" . $post->post_title . "</a><br>";
+				       $noAnnounce = false;
+				    }	       
+				}
+				if ($noAnnounce) {
+				   echo "<p>There are currently no announcements</p>";
+				}
+			  ?>
 		    </div>
 		</div> <!-- .post -->
 		
