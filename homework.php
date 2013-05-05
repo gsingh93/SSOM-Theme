@@ -25,7 +25,7 @@ Template Name: Homework List
 			krsort($posts_dates);
 		    ?>
 		    <div class="post_content">
-		      <?php echo $post_data->post_content; ?>
+		      <?php echo apply_filters('the_content', $post_data->post_content); ?>
 		      <table class="rounded-corners blue-table two-column">
 			<thead>
 			  <tr>

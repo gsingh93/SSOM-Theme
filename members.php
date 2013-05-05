@@ -14,7 +14,7 @@ Template Name: Committee Members
 		    <div class="post_title"><?php echo $post_data->post_title; ?></div>
 		    <div class="post_content">
                        <?php
-		          echo $post_data->post_content;
+		          echo apply_filters('the_content', $post_data->post_content);
    		          $members = get_post_meta($post_data->ID, 'committee-members', true);
 			  
 			  echo "<h3>Executive Committee Members</h3>";
