@@ -29,7 +29,7 @@ Template Name: Committee Members
 			      if ($member['executive'] == $executive) {
 			      	 echo "<h4>" . $member['name'] . "</h4>";
 			      	 if ($member['position'] != "") {
-			      	    echo "<p>" . $member['position'] . "</p>";
+			      	    echo "<p style='margin-bottom:0.5em;'>" . $member['position'] . "</p>";
 			      	    }
 			      	 echo "<p>";
 			      	 if ($member['email'] != "") {
@@ -42,7 +42,7 @@ Template Name: Committee Members
 			      	    echo "Home: " . $member['home-phone'] . "<br>";
 			      	 } 
 			      	 if ($member['image-url'] != "") {
-			      	    echo "<br><image src='" . $member['image-url'] . "'/>";
+			      	    echo "<image src='" . $member['image-url'] . "'/><br><br>";
 			      	 }
 			      	 echo "</p>";
 			      }
