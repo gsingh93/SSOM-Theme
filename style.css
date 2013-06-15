@@ -325,6 +325,15 @@ table.blue-table tbody tr:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdcbfc', endColorstr='#d0dafd',GradientType=0 ); /* IE6-8 */
 }
 
+#teachers {
+    text-align: center;
+}
+
+#teachers .teacher {
+    display: inline-block;
+    padding: 30px;
+}
+
 .post {
     width: 100%;
     float: left;

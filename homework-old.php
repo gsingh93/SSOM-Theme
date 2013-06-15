@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Homework List
+Template Name: Old Homework List
 */
 ?>
 
@@ -15,11 +15,15 @@ Template Name: Homework List
 		    <?php
 		        $id = $wp_query->post->ID;
                         $grade = get_post_meta($id, 'grade', true);
+			$startDate = get_post_meta($id, 'school_year_start', true);
+			$endDate = get_post_meta($id, 'school_year_end', true);
 		        $posts = get_posts('posts_per_page=-1&post_type=homework&meta_key=grade&meta_value=' . $grade); 
 			$posts_dates = array();
 			foreach ($posts as $post) {
 			    $date = get_post_meta($post->ID, 'assign_date', true);
-			    $posts_dates[$date] = $post;
+			    if ($date > $startDate && $date < $endDate) {
+			       $posts_dates[$date] = $post;
+			    }
 			}
 			krsort($posts_dates);
 		    ?>
