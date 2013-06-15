@@ -18,6 +18,61 @@
 	    	    <h1 style="top:-50px; position:relative" id="title">Welcome to the Sikh Society of Michigan Website</h2>
 		    <div style="top:-50px; position:relative" class="post_content">
 			  <?php echo apply_filters('the_content', $page_data->post_content); ?>
+			  <h2>Upcoming Programs</h2>
+			  <table class="rounded-corners blue-table more-than-two-column">
+			  <thead>
+				<tr>
+				    <td>Date</td>
+			  	    <td>Program</td>
+			  	    <td>Time</td>
+			        </tr>
+			  </thead>
+			  <tbody>
+			     
+			  <?php
+				$id = $wp_query->post->ID;
+                          	$programs = get_post_meta($id, 'programschedule', true);
+			  	foreach ($programs as $program):
+			  ?>
+			  <tr>
+				<td>
+				<?php echo $program["date"]; ?>
+				</td>
+				<td>
+				<?php echo nl2br($program["program"]); ?>
+				</td>
+				<td>
+				<?php
+					if ($program["time"] != "")
+				      	   echo nl2br($program["time"]);
+				?>
+				</td>
+			  </tr>
+			  <?php endforeach; ?>
+			  </tbody>
+			  </table>
+
+			  <h2>Open Langar Seva</h2>
+			  <table class="rounded-corners blue-table two-column">
+			      <thead>
+			          <tr>
+				      <td>Month</td>
+				      <td>Dates</td>
+				  </tr>
+			      </thead>
+			      <tbody>
+			      <?php
+				$entries = get_post_meta($id, 'langarseva', true);
+				foreach($entries as $entry):
+			      ?>
+			      <tr>
+			          <td><?php echo $entry['month']; ?></td>
+			          <td><?php echo $entry['dates']; ?></td>
+			      </tr>
+			      <?php endforeach; ?>
+			      </tbody>
+			  </table>
+
 			  <h2>Announcements</h2>
 			  <?php
 			        $posts = get_posts('post_type=announcement');
