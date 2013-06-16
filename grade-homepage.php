@@ -50,7 +50,7 @@ Template Name: Grade Homepage
 		   </div>
 		      <?php
 			echo apply_filters('the_content', $post_data->post_content);
-		      	if (!empty($post_dates)):
+		      	if (!empty($posts_dates)):
 		      ?>
 		      <h2>Homework</h2>
 		      <table class="rounded-corners blue-table two-column">
