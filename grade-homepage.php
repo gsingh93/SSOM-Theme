@@ -37,7 +37,7 @@ Template Name: Grade Homepage
 		      <?php echo $teacher["name"];?><br>
 		      <?php
 			if ($teacher["email"] != "") {
-			   echo $teacher["email"];
+			   echo "<a href='mailto:" . $teacher['email'] . "'>" . $teacher['email'] . "</a>";
 			   echo "<br>";
 			}
 		      	if ($teacher["phone-number"] != "") {
